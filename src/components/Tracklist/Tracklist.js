@@ -2,15 +2,12 @@ import React from "react";
 import Track from "../Track/Track";
 import "./Tracklist.css"
 
-function Tracklist({ context }) {
+function Tracklist({ context, tracks, onAdd, onRemove }) {
     return (
         <div className="tracklistContainer">
-            <Track context={context} />
-            <Track context={context} />
-            <Track context={context} />
-            <Track context={context} />
-            <Track context={context} />
-            <Track context={context} />
+            {tracks.map(track =>
+                <Track key= {track.id} context={context} track={track} onAdd={onAdd} onRemove={onRemove} />
+            )}
         </div>
     )
 }

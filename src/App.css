@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+h2 {
+  color: rgb(30, 215, 96);
+  filter: drop-shadow(rgb(12, 86, 38) 2px 2px 0px);
+  font-size: 36px;
+  font-weight: 800;
+}
