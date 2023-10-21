@@ -52,3 +52,7 @@
 .playlistContainer .tracklistContainer .playlistTrack .trackDetails span:nth-child(4) {
     display: block;
 }
+
+.playlistContainer .tracklistContainer .playlistTrack .trackDetails span:nth-child(3) {
+    visibility: hidden;
+}

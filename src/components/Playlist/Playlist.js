@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Tracklist from '../Tracklist/Tracklist';
 import './Playlist.css';
 
-const Playlist = ({ playlistName, playlistTracks, onNameChange, onRemove }) => {
+const Playlist = ({ playlistName, playlistTracks, onNameChange, onRemove, onSave }) => {
 
     return (
         <div className="playlistContainer">
@@ -14,7 +14,7 @@ const Playlist = ({ playlistName, playlistTracks, onNameChange, onRemove }) => {
                     onChange={(e) => onNameChange(e.target.value)}
                     placeholder="Name your playlist" 
                 />
-                <button className="saveButton" >
+                <button className="saveButton" onClick={onSave} >
                     Save to Spotify
                 </button>
             </div>

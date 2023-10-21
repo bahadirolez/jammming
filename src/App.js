@@ -20,11 +20,18 @@ function App() {
     setPlaylistTracks(playlistTracks.filter(savedTrack => savedTrack.id !== track.id));
   }
 
+  const savePlaylist = () => {
+    const trackURIs = playlistTracks.map(track => track.uri);
+    console.log(trackURIs);
+    setPlaylistName("New Playlist");
+    setPlaylistTracks([]);
+  }
+
   return (
     <div className="App">
       <SearchBar />
       <SearchResults tracks={searchResults} onAdd={addTrack} />
-      <Playlist playlistTracks={playlistTracks} playlistName={playlistName} onNameChange={setPlaylistName} onRemove={removeTrack} />
+      <Playlist playlistTracks={playlistTracks} playlistName={playlistName} onNameChange={setPlaylistName} onRemove={removeTrack} onSave={savePlaylist} />
     </div>
   );
 }
