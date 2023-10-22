@@ -1,0 +1,30 @@
+  .header{
+    height: 100vh; /* takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers children vertically */
+    align-items: center; /* centers children horizontally */
+    background: url('../../../public/images/header.png') no-repeat center center fixed; 
+    background-size: cover;
+}
+  
+  .header h1 {
+    color: #333333;
+    filter: drop-shadow(rgb(30, 215, 96) 3px 3px 1px);
+    font-size: 3em;
+    font-weight: 800;
+    margin: 20px auto;
+  }
+  
+  .header span {
+    font-size: 1.1em;
+    color: #444444; 
+    font-weight: 600;
+    background-color: #f7f2f269;
+  }
+  
+  .shrunk-header {
+    height: 250px;
+    justify-content: flex-start;
+    padding-top: 20px; 
+}

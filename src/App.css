@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -42,4 +43,8 @@ h2 {
   filter: drop-shadow(rgb(12, 86, 38) 2px 2px 0px);
   font-size: 36px;
   font-weight: 800;
+}
+
+.startParagraph {
+  padding-top: 20px;
 }

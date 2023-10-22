@@ -12,7 +12,7 @@ const Playlist = ({ playlistName, playlistTracks, onNameChange, onRemove, onSave
                     className="playlistNameInput" 
                     value={playlistName} 
                     onChange={(e) => onNameChange(e.target.value)}
-                    placeholder="Name your playlist" 
+                    placeholder="Name your playlist here..." 
                 />
                 <button className="saveButton" onClick={onSave} >
                     Save to Spotify
