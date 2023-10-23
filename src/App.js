@@ -41,8 +41,9 @@ function App() {
       <Header hasSearched={hasSearched} onSearch={updateSearchResults} onSearchComplete={setHasSearched} />
       {hasSearched && (
                 <>
-                    <SearchResults tracks={searchResults} onAdd={addTrack} />
-                    <Playlist playlistTracks={playlistTracks} playlistName={playlistName} onNameChange={setPlaylistName} onRemove={removeTrack} onSave={savePlaylist} />
+                  <p className="descriptiveText" >Your selected tracks appear at the bottom of the screen, ready to be saved to Spotify with just a click!</p>
+                  <SearchResults tracks={searchResults} onAdd={addTrack} />
+                  <Playlist playlistTracks={playlistTracks} playlistName={playlistName} onNameChange={setPlaylistName} onRemove={removeTrack} onSave={savePlaylist} />
                 </>
             )}
     </div>
