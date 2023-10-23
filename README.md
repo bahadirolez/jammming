@@ -1,6 +1,6 @@
 # Jammming
 
-![Jammming Logo]('./src/logo.png')  <!-- Replace "path_to_logo.png" with the path to your logo if you have one. -->
+![Jammming Logo](/src/logo.png)  <!-- Replace "path_to_logo.png" with the path to your logo if you have one. -->
 
 ## Overview
 Jammming is a web application that allows users to search the Spotify library, create a custom playlist, and then save it to their Spotify account.
