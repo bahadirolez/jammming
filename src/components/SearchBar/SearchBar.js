@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './SearchBar.css';
 import SearchIcon from '../../assets/icons/SearchIcon.svg';
 import Spotify from '../../api/Spotify';
-import SearchResults from '../SearchResults/SearchResults';
 
 const SearchBar = ({ onSearch, onSearchComplete }) => {
     const [searchTerm, setSearchTerm] = useState("");
